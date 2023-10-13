@@ -1,0 +1,225 @@
+
+.fatfooter {
+    @include box-sizing;
+    @include make-fatfooter(6, 100%); // 如需要手機版顯示，把以下註解即可，或改為visible
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+.fatfooter {
+    clear: both;
+    zoom: 1;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 1em;
+    margin: 0 auto;
+    background: #F1F1F1;
+    // background:$fatBgColor;
+    // overflow: hidden;
+    // position: relative;
+    // padding-bottom: 30px;
+    // margin-left: auto;
+    // margin-right: auto; // 右上方切換收合按鈕設定
+    .container {
+        position: relative;
+        overflow:hidden;
+        @include box-sizing();
+        @include gutter();
+    } //fatfooter選單
+//     .btn-fatfooter {
+//         font-size: 0;
+//         cursor: pointer;
+//         display: inline-block;
+//         height: 1.5em;
+//         width: 80px;
+//         color: #FFF;
+//         border: none;
+//         background: $fatTextbgColor;
+//         position: absolute;
+//         top:-2px;
+//         right: 1%;
+//         z-index: 999;
+
+//         @include border-radius(0px 0px 10px 10px);
+//         &:before {
+//             content: "";
+//             position: absolute;
+//             width: 12px;
+//             height: 12px;
+//             border: 2px solid #FFF;
+//             border-left: none;
+//             border-bottom: none;
+//             transform: rotate(-45deg);
+//             left: 50%;
+//             top: 12px;
+//             margin-left: -6px;
+//             transition: .3s ease-out;
+//         }
+//         &:hover,
+//         &:focus {
+//             background: $fatTextbgColor;
+//             color: $fatTextColor2;
+//             text-decoration: none;
+//             cursor: pointer;
+//             border: none;
+//             &:before{
+//               transform:rotate(135deg);
+//               top:5px;
+//           }
+//       }
+//       .open{
+//         &:before{
+//             transform:rotate(135deg);
+//             top:5px;
+//         }
+//         &:hover,
+//         &:focus {
+//           &:before{
+//             transform:rotate(-45deg);
+//             top:12px;
+//         }  
+//     }
+// }
+
+
+
+
+
+// }
+.btn-fatfooter {
+    font-size: .813em;
+    display: block;
+    min-width: 6em;
+    color: #FFF;
+    border: none;
+    background: $fatTextbgColor;
+    position: absolute;
+    right: 1%;
+    z-index: 90;
+    text-indent: -9999px;
+    @include border-radius(4px);
+    &:before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #FFF;
+        border-left: none;
+        border-bottom: none;
+        transform: rotate(-45deg);
+        left: 50%;
+        top: 12px;
+        margin-left: -6px;
+        transition: .3s ease-out;
+    }
+    &:hover,
+    &:focus {
+        background: darken($fatTextbgColor, 10);
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    &.close {
+        &:before {
+            transform: rotate(135deg) !important;
+            top: 5px;
+        }
+    }
+}
+nav {
+    clear: both;
+    color: #fff;
+    overflow: hidden;
+    display: block;
+    position: relative;
+        // padding: 30px 0 0 10px;
+        padding: 40px 0 0 1%;
+        @include box-sizing(border-box);
+        ul {
+            list-style: none;
+            margin: 0;
+            // overflow: hidden;
+            width: 100%;
+            padding: 0;
+            // outline:1px solid red;
+            @media (max-width: 767px) {
+                width: 100%;
+                display: block;
+                margin: 0px auto;
+            }
+            li {
+                display: inline-block; // outline: 1px solid red;
+                text-align: left;
+                vertical-align: top;
+                margin: 0 0 1% 0;
+                // line-height: 1.3em; // margin:$fatFooterliMargin;
+                line-height: 2.6em;
+                @include box-sizing(border-box);
+                @media (max-width: 767px) {
+                    display:block;
+                }
+                a {
+                    color: $fatTextColor;
+                    @include box-sizing;
+                    text-align: left;
+                    // line-height: 1.25em;
+                    line-height: 1.65em;
+                    display: block;
+                    // font-weight: 400;
+                    font-weight: bold;
+                    // padding: 2% 5%;
+                    &:hover,
+                    &:focus {
+                        color:#006a7f;
+                        text-decoration: none;
+                        // background: $fatTextbgColor;
+                        @include border-radius(3px);
+                    }
+                }
+                ul {
+                    padding: 0;
+                    margin-top: 5px;
+                    overflow: hidden;
+                    @media (max-width: 767px) {
+                        width:auto;
+                        padding-left: 5%;
+                    }
+                    li {
+                        display: block;
+                        margin: 0;
+                        padding: 5px 0;
+                        border: none;
+                        background: none;
+                        width: 100%;
+                        a {
+                            display: block;
+                            // color: lighten($fatTextColor2, 10);
+                            text-align: left;
+                            text-decoration: none;
+                            font-size: .938em;
+                            font-weight: normal;
+                            line-height: 1.4em;
+                            padding: 3px 4px;
+                            background: none;
+                            @include box-sizing(border-box);
+                            border-bottom: none;
+                            &:hover,
+                            &:focus {
+                                // color:$fatTextColor2;
+                            }
+                        }
+
+                    }
+                    ul {
+                        display: none; //第三層關閉
+                    }
+                }
+            }
+        }
+    }
+}

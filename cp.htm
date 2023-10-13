@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HyUI kit</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="vendor/slick/css/slick.css"/>
+<link rel="stylesheet" href="vendor/slick/css/slick-theme.css"/>
+<link rel="stylesheet" href="css/hyui.css">
+</head>
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按 Enter 到主內容區</a>
+    <!-- mobile menu -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+
+                <h1>
+                    <a href="#"><img src="images/logo.png" alt="中華民國內政部移民署"/></a>
+                </h1>
+                <!-- navigation Start -->
+                <nav class="navigation">
+                    <!-- 一組ul預設靠右 -->
+                    <!-- 兩組ul已寫JQ靠左靠右 -->
+                    <ul>
+                        <li><a href="#">回首頁</a></li>
+                        <li><a href="#">網站導覽</a></li>
+                        <li><a href="#">回移民署</a></li>
+                    </ul>
+                </nav>               
+                <!-- Search Start -->
+                <section class="search">
+                 <noscript>
+                    您的瀏覽器不支援 JavaScript 或 JavaScript已停用
+                </noscript>
+                <form action="" class="form_inline">
+                    <div class="form_grp">
+                        <label for="mustSameAsId">全文檢索:</label>
+                        <input name="username" id="mustSameAsId" type="text" placeholder="請輸入關鍵字" accesskey="S">
+                    </div>
+                    <div class="btn_grp">
+                        <input name="" type="submit" value="" placeholder="查詢" />
+                    </div>
+                </form>
+            </section>  
+
+            <!-- noscript -->
+            <noscript>
+                您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+            </noscript>
+            <!-- menu Start -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">本隊介紹</a>
+                        <ul>
+                            <li><a href="#">般難道候者</a></li>
+                            <li><a href="#">性一聲心</a></li>
+                            <li><a href="#">話臺發天</a></li>
+                            <li><a href="#">見趣景風出</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">便民服務</a>
+                        <ul>
+                            <li><a href="#">坐息終路</a></li>
+                            <li><a href="#">選唱個可心</a></li>
+                            <li><a href="#">車就開而著</a></li>
+                            <li><a href="#">計以國升</a></li>
+                            <li><a href="#">過河人失是</a></li>
+                            <li><a href="#">千遠嗎親</a></li>
+                            <li><a href="#">國方銀主間望</a></li>
+                            <li><a href="#">背事規水</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">活動專區</a>
+                        <ul>
+                            <li><a href="#">中少維府</a></li>
+                            <li><a href="#">校始信響要們</a></li>
+                            <li><a href="#">衣花保只紅</a>
+                                <ul>
+                                    <li><a href="#">第三層選單測試</a>
+                                        <ul>
+                                            <li><a href="#">第四層選單測試</a></li>
+                                            <li><a href="#">第四層選單測試</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">104年</a></li>
+                                    <li><a href="#">103年</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">微從的出</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">訊息公告</a>
+                        <ul>
+                            <li><a href="#">小在少變開</a></li>
+                            <li><a href="#">神頭是到在</a></li>
+                            <li><a href="#">不從議育</a></li>
+                            <li><a href="#">家業異氣歡</a></li>
+                            <li><a href="#">看感建建錯</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">互動專區</a>
+                        <ul>
+                            <li><a href="#">經車散雖</a></li>
+                            <li><a href="#">日大畫評</a></li>
+                            <li><a href="#">不發題代</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">常見問題</a>
+                        <ul>
+                            <li><a href="#">經車散雖</a></li>
+                            <li><a href="#">日大畫評</a></li>
+                            <li><a href="#">不發題代</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <!-- header End -->
+
+        <!-- main Start -->
+        <div id="center" class="main">
+            <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+            <!-- wrap star -->
+            <section class="section wrap">
+                <div class="container">
+
+                    <!-- breadcrumb路徑 -->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">節點</a></li>
+                            <li>節點</li>
+                        </ul>
+                    </div>
+                    <!-- h2節點 -->
+                    <h2>最新消息</h2>
+                    <!-- function功能區塊 -->
+                    <div class="function">
+                        <ul>
+                            <li class="back"><a href="#">回上一頁</a></li>
+                            <li class="print"><a href="#">友善列印</a></li>
+                            <li class="forward"><a href="#">轉寄友人</a></li>
+                        </ul>
+                    </div>
+                    <!-- 社群分享 -->
+                    <div class="share">
+                        <ul>
+                            <li><a href="#"><img src="images/basic/icon_facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#"><img src="images/basic/icon_twitter.svg" alt="twitter"></a></li>
+                            <li><a href="#"><img src="images/basic/icon_line.svg" alt="line"></a></li>
+                            <li><a href="#"><img src="images/basic/icon_youtube.svg" alt="youtube"></a></li>
+                            <li><a href="#"><img src="images/basic/icon_googleplus.svg" alt="google plus"></a></li>
+                            <li><a href="#"><img src="images/basic/icon_instagram.svg" alt="instagram"></a></li>
+                            <li><a href="#"><img src="images/basic/icon_linkedin.svg" alt="LinkedIn"></a></li>
+                        </ul>
+                    </div>
+                    <!-- CP Start -->
+                    <section class="cp">
+                        <h3>無婚姻關係外籍母親如何留臺照顧子女 內政部將再彙整意見研議妥適因應方案</h3>
+
+                        <ul class="info">
+                            <li>發布日期:2018-03-20</li>
+                            <li>發布單位:移民事務組‧移民輔導科</li>
+                            <li>聯絡電話：(02)2388-9393 分機2689</li>
+                            <li>更新頻率:不定期</li>
+                            <li>更新日期：2018-03-20</li>
+                            <li>點閱次數：123456</li>
+                        </ul>
+
+
+                        <p> <img src="images/pic01.jpg" alt="圖片說明" class="float_left"><a href="#">連結文字樣式</a>107年3月5日行政院性別平等會召開第17次委員會議時，出席委員提出臨時動議並舉例5名個案樣態，希望內政部可以修正入出國及移民法，讓外籍生母可以不受「婚姻」狀態或「幼依長」原則的限制，以協助外籍母親留臺照顧子女確保家庭團聚權。行政院賴院長聆聽內政部移民署說明意見後指示，就無婚姻關係之外籍母親如何留臺照顧子女的困境，由內政部再行研議解決。</p>
+                        <p>內政部移民署說明，委員所舉的案例中，外籍配偶在離婚後有約定共同監護子女，或單獨由母親監護，但生母在離境後發生居留證過期情形，無法申辦居留簽證僅能以停留簽證入境，造成家庭團聚困擾，對於這種樣態已經納入入出國及移民法第31條第6項的修正草案中，增列曾經在臺合法居留且取得設有戶籍未成年親生子女權利義務行使或負擔，對其有撫育事實或會面交往的外籍配偶，可以先取得外交部核發停留簽證入境後，再向內政部移民署申居留證。至於外籍配偶育有未成年親生子女，但未曾在臺居留，又遇到先生死亡，面臨無法申請在臺居留照顧子女困境的樣態，移民署將再增修入出國及移民法，以便使她們可以在臺居留，進而永久居留，安心在臺生活。移民署表示，這三種樣態的處理方式，已經不受幼依長的限制，同時也將依院長指示，在入出國及移民法未完成修正前，得依個案情形專案辦理。</p>
+                        <ul>
+                            <li>影開兒中不們西動會味理化由子常洲國有標題</li>
+                            <li>首動我行得流事個要使著獨操大</li>
+                            <li>推列黃上道有畫走長市上</li>
+                            <li>證會不就人推陸跑公片重</li>
+                            <li>處來在山工國生即工球一，易心個長什去實用當們公有也候</li>
+                        </ul>
+                        <ol>
+                            <li>影開兒中不們西動會味理化由子常洲國有標題</li>
+                            <li>首動我行得流事個要使著獨操大</li>
+                            <li>推列黃上道有畫走長市上</li>
+                            <li>證會不就人推陸跑公片重</li>
+                            <li>處來在山工國生即工球一，易心個長什去實用當們公有也候</li>
+                        </ol>
+                        <h4>表格樣式</h4>
+                        <table summary="">
+                            <thead>
+                                <tr>
+                                    <th>表格標題</th>
+                                    <th>表格標題</th>
+                                    <th>表格標題</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>內容內容內容內容內容內容</td>
+                                    <td>內容內容內容</td>
+                                    <td>內容內容內容內容內容內容內容內容</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <!-- CP End -->
+
+                    <!-- cp_slider+slick_lightbox -->
+                    <div class="lightbox_slider">
+                        <h3>燈箱照片</h3>
+                        <div class="cp_slider">
+                            <div class="imgOuter">
+                                <a href="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第一張圖說">
+                                    <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                                </a>
+                                <p class="infotxt">第一張圖說</p>
+                            </div>
+                            <div class="imgOuter">
+                                <a href="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第二張圖說">
+                                    <img src="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt=""> </a>
+                                    <p class="infotxt">第二張圖說</p>
+                                </div>
+                                <div class="imgOuter">
+                                    <a href="https://assets.imgix.net/examples/womanlandscape.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第三張圖說">
+                                        <img src="https://assets.imgix.net/examples/womanlandscape.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                                    </a>
+                                    <p class="infotxt">第三張圖說</p>
+                                </div>
+                                <div class="imgOuter">
+                                    <a href="https://assets.imgix.net/unsplash/paperlamp.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第四張圖說">
+                                        <img src="https://assets.imgix.net/unsplash/paperlamp.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                                    </a>
+                                    <p class="infotxt">第四張圖說</p>
+                                </div>
+                                <div class="imgOuter">
+                                    <a href="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第五張圖說">
+                                        <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                                    </a>
+                                    <p class="infotxt">第五張圖說</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- lightbox_slider end -->
+
+                        <!-- weblink 外部連結 -->
+                        <div class="web_link">
+                            <h4>外部連結</h4>
+                            <ol>
+                                <li><a href="#">外部連結1外部連結1外部連結1外部連結1外部連結1外部連結1外部連結1外部連結1</a></li>
+                                <li><a href="#">外部連結2</a></li>
+                                <li><a href="#">外部連結3</a></li>
+                                <li><a href="#">外部連結4</a></li>
+                                <li><a href="#">外部連結5</a></li>
+                            </ol>
+                        </div>
+                        <!-- file download 檔案下載 -->
+                        <div class="file_download">
+                            <h4>檔案下載</h4>
+                            <ul>
+                                <li>
+                                    <a href="xxxx.doc">word檔名<span class="kb">(100.kb)</span></a>
+                                    <span class="update">更新日期：2018-03-20</span>
+                                    <span class="file_view">下載次數：5</span>
+                                </li>
+                                <li>
+                                    <a href="xxxx.odf">odf檔名<span class="kb">(100.kb)</span></a>
+                                    <span class="update">更新日期：2018-03-20</span>
+                                    <span class="file_view">下載次數：5</span>
+                                </li>
+                                <li>
+                                    <a href="xxxx.pdf">pdf檔名<span class="kb">(100.kb)</span></a>
+                                    <span class="update">更新日期：2018-03-20</span>
+                                    <span class="file_view">下載次數：5</span>
+                                </li>
+                                <li>
+                                    <a href="xxxx.xls">xls檔名<span class="kb">(100.kb)</span></a>
+                                    <span class="update">更新日期：2018-03-20</span>
+                                    <span class="file_view">下載次數：5</span>
+                                </li>
+                                <li>
+                                    <a href="xxxx.ppt">ppt檔名<span class="kb">(100.kb)</span></a>
+                                    <span class="update">更新日期：2018-03-20</span>
+                                    <span class="file_view">下載次數：5</span>
+                                </li>
+                                <li>
+                                    <a href="xxxx.jpg">jpg檔名<span class="kb">(100.kb)</span></a>
+                                    <span class="update">更新日期：2018-03-20</span>
+                                    <span class="file_view">下載次數：5</span>
+                                </li>
+                                <li>
+                                    <a href="xxxx.mp3">mp3檔名<span class="kb">(100.kb)</span></a>
+                                    <span class="update">更新日期：2018-03-20</span>
+                                    <span class="file_view">下載次數：5</span>
+                                </li>
+                                <li>
+                                    <a href="xxxx.mov">mov檔名<span class="kb">(100.kb)</span></a>
+                                    <span class="update">更新日期：2018-03-20</span>
+                                    <span class="file_view">下載次數：5</span>
+                                </li>
+                                <li>
+                                    <a href="xxxx.txt">txt檔名<span class="kb">(100.kb)</span></a>
+                                    <span class="update">更新日期：2018-03-20</span>
+                                    <span class="file_view">下載次數：5</span>
+                                </li>
+                                <li>
+                                    <a href="xxxx.xxx">其他格式檔名<span class="kb">(100.kb)</span></a>
+                                    <span class="update">更新日期：2018-03-20</span>
+                                    <span class="file_view">下載次數：5</span>
+                                </li>
+                                <li>
+                                    <a href="xxxx.zip">全部資料壓縮檔<span class="kb">(100.kb)</span></a>
+                                    <span class="update">更新日期：2018-03-20</span>
+                                    <span class="file_view">下載次數：5</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- wrap end -->
+            </div>
+            <!-- main end -->
+
+            <!-- fatfooter Start -->
+            <section class="fatfooter">
+                <div class="container">
+                    <button type="button" name="收合" class="btn btn-fatfooter">收合</button>
+                    <nav>
+                        <ul>
+                            <li><a href="#">本隊介紹</a>
+                                <ul>
+                                    <li><a href="#">國境事務大隊簡介</a></li>
+                                    <li><a href="#">主管簡介</a></li>
+                                    <li><a href="#">組織編制</a></li>
+                                    <li><a href="#">業務職掌</a></li>
+                                    <li><a href="#">最佳移民官</a></li>
+                                    <li><a href="#">證照辨識達人</a></li>
+                                    <li><a href="#">各服務地點聯絡資訊</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">便民服務</a>
+                                <ul>
+                                    <li><a href="#">便民服務</a></li>
+                                    <li><a href="#">運輸業者專區</a></li>
+                                    <li><a href="#">旅客投訴處理流程</a></li>
+                                    <li><a href="#">認識護照</a></li>
+                                    <li><a href="#">國境線面談</a></li>
+                                    <li><a href="#">國境各類書表連結</a></li>
+                                    <li><a href="#">服務櫃檯受理項目</a></li>
+                                    <li><a href="#">各機場、港口航班資訊</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">活動專區</a>
+                                <ul>
+                                    <li><a href="#">國境管理國際研討會</a></li>
+                                    <li><a href="#">機場小旅行學員護照</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">訊息公告</a>
+                                <ul>
+                                    <li><a href="#">最新消息</a></li>
+                                    <li><a href="#">移民特考考情資訊</a></li>
+                                    <li><a href="#">聞聲救苦</a></li>
+                                    <li><a href="#">媒體報導</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">互動專區</a>
+                                <ul>
+                                    <li><a href="#">旅客來信讚揚案例</a></li>
+                                    <li><a href="#">上榜同仁經驗分享</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">常見問題</a></li>                                            
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer>
+                <!-- footer_link star -->
+                <div class="footer_link">
+                    <div class="container">
+                        <ul>
+                            <li><a href="#">保有及管理個人資料</a></li>
+                            <li><a href="#">隱私權保護服務及宣告</a></li>
+                            <li><a href="#">安全防護與回復機制</a></li>
+                            <li><a href="#">資訊安全宣告</a></li>
+                            <li><a href="#">政府網站資料開放宣告</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- footer_link end -->
+
+                <div class="container">
+                    <a class="accesskey" href="#aF" id="aF" accesskey="F" title="頁尾區">:::</a>
+
+                    <div class="footer_info">
+
+                        <p class="Copyright">中華民國內政部移民署 版權所有 NATIONAL IMMIGRATION AGENCY</p>
+                        <p>
+                            地址：33758桃園市大園區航站南路9號     電話：(03)398-5010<br>
+                            外來人士在臺生活諮詢服務專線：國內 0800-024-111 國外 886-800-024-111
+                        </p>
+                        <span class="update">更新日期:<em>2018/01/01</em></span>
+                        <span class="counter">累計瀏覽人次:<em>46476653</em></span>
+                    </div>
+                    <div class="footer_icon">
+                        <a target="_blank" href="javascript:;" title="另開視窗">
+                            <img src="images/basic/accessibility.jpg" alt="">
+                        </a>
+                        <a target="_blank" href="javascript:;" title="另開視窗">
+                            <img src="images/basic/egov.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <a href="javascript:;" class="scrollToTop" title="回頁首">回頁首</a>
+
+        <script src="js/jquery.1.12.4.min.js"></script>
+        <script src="vendor/slick/slick.js"></script>
+        <script src="vendor/slick/slick-lightbox.js"></script>
+        <script type="text/javascript">
+            $('.cp_slider').slickLightbox({
+                caption: 'caption',
+                useHistoryApi: 'true',
+                lazy: true
+            });
+
+        </script>
+        <script src="vendor/jquery.easing.min.js"></script>
+        <script src="js/hyui.js"></script>
+        <script src="js/customize_scripts2.js"></script>
+
+    </body>
+    </html>

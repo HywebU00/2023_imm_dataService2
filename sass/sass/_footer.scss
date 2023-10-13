@@ -1,0 +1,119 @@
+footer {
+    @include box-sizing(border-box);
+    text-align: left;
+    font-size: 0.813em;
+    background:$footerBgColor;
+    color:$footerTextColor;
+    .container{
+        @include gutter();
+        >div{
+            padding-bottom: 1em;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $primaryColor;
+        &:hover,
+        &:focus {
+            color: darken($primaryColor, 10);
+        }
+    }
+    .footer_logo {
+        @include make-xs-column(8);
+        @include make-sm-column(3);
+        @include make-md-column(3);
+        @include make-lg-column(3);
+        @include gutter();
+    }
+    .footer_info {
+        padding-top:0.5em;
+        @include make-xs-column(12);
+        @include make-sm-column(8);
+        @include make-md-column(8);
+        @include make-lg-column(8);
+        @include gutter();
+    }
+    .footer_icon {
+        padding-top:1em;
+        @include make-xs-column(12);
+        @include make-sm-column(4);
+        @include make-md-column(4);
+        @include make-lg-column(4);
+        @include gutter();
+    } // 版權連結
+    .footer_link {
+        background:$footerLinkbg;
+        @include li-reset();
+        @include clearfix();
+        text-align:center;
+        ul{
+            margin:5px auto;
+            li {
+                display: inline-block;
+                margin: 0px 5px 0px 0px;
+
+                a {
+                    display: block;
+                    padding: .5em 1.4em .5em .5em ;
+                    color: $footerLinkColor;
+                    background: url(../images/f_linkbg.png)no-repeat right center;
+                    font-size: 1.13em;
+                    // @include border-radius(3px);
+                    // @include transition(all, .3s, ease-out);
+                    &:hover,
+                    &:focus {
+                        color:$footerLinkColorOv;
+                    }
+
+                }
+                &:last-child a{
+                    background:none;
+                }
+            }
+        }
+        @include screen("mobile") {
+            text-align:left;
+            ul{
+                margin:0;
+                padding:0;
+                li{
+                  display: block; 
+                  border-bottom: solid 1px #ccc;
+                  margin: 0;
+                  a{
+                    background:none;
+                    padding:1em;
+                }
+                &:last-child{
+                    border-bottom: none;
+                }
+            }
+        }
+    } 
+}
+p {
+    line-height: 1.5em;
+    margin: 0.5em 0;
+}
+.update,
+.counter {
+    display: inline-block;
+    margin-right: 5px;
+    em {
+        font-style: normal;
+        color:$counterColor;
+        padding: 0 .5em;
+    }
+}
+.footer_icon {
+    text-align:right;
+    a {
+        display: inline-block;
+        vertical-align: top;
+        margin:2px 5px;
+    }
+    img {
+        max-width: 120px;
+    }
+}
+}

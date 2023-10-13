@@ -1,0 +1,60 @@
+.thumbnail{
+	@include make-xs-column(12);
+	@include make-sm-column(6);
+	@include make-md-column(4);
+	@include make-lg-column(3);
+	@include gutter();
+	margin-bottom: 15px;
+	a{
+		display:block;
+		height: 290px;
+		@include border-radius(5px);
+		border:1px solid #DDD;
+		padding:.5em 0.5em 1em .5em;
+		&:hover,&:focus{
+			border:1px solid #2bc2d8;
+			color: #006699;
+		}
+	}
+	.imgOuter{
+		@include aspect-ratio(4, 3);   //設定比例ex:4:3 or 16:9
+		img{
+			max-width: 100%;
+			max-height: 100%;
+			width: auto;
+			height: auto;
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			margin: auto;
+		}
+	}
+	.caption{
+		max-width: 90%;
+		margin: 0px auto;
+		h3{
+			font-weight:400;
+			font-size:1.1em;
+			height:1.2em;
+			overflow:hidden;
+			margin: 0.5em 0;
+			padding: 0;
+			text-align: left;
+		}
+		p{
+			font-size:0.93em;
+			height:3em;
+			overflow:hidden;
+			margin: 0.5em 0;
+			padding: 0;
+			text-align: left;
+		}  
+	}
+
+}
+.gallery {
+	margin:1em 0;
+}

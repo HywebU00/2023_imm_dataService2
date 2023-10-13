@@ -1,0 +1,24 @@
+.qp{
+	margin: 1em auto;
+	@include box-sizing;
+	padding:1em;
+	border-top:solid 1px #ccc;
+	p{
+		margin:0.5em 0;
+	}
+	@include screen('mobile') {
+		padding:1em 0;	
+	}
+	.btn_grp{
+		input{
+			min-width: 6em;
+		}
+	}
+}
+.myDate{
+	@include screen('mobile') {
+		input[type="text"]{
+			width:70% !important;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+// 此變數為框架之整體變數，控制整體網站之設定，包含 顏色、文字、格線系統
+// 於mixins 資料夾內，各個模組也有其個別使用的變數，請至個別檔案設定，個別使用變數不含在此設定
+
+//-------------------------------------------------------------顏色---------//
+// 定義顏色 此顏色可自由變換
+$primaryColor:				#204ca4;				//主色				
+$secondaryColor:			#f39; 					//輔助色
+$lightColor:				#96f;					//焦點
+// 但注意真實顏色與語意的關聯必須易於辨識
+//服務站
+$color-service: 			#2e2e2e;
+$color-service-2: 			#03385c;
+$color-service-3: 			#03c;
+$color-service-4: 			#090;
+$color-service-header:      #454545;
+
+
+$color-default: 			#fff;
+$color-gray: 				#CCC;
+$color-green:				#9fb111;
+$color-green2:				#5c6b1f;
+$color-orange: 				#e1540e;
+$color-red: 				#ff3e4d;
+$color-blue: 				#03d6d7;
+$color-blue2:				#229ea5;
+$color-blue3:               #126a80;
+$color-yellow: 				#efff00;
+$color-purple: 				#aa5ac5;
+$hrColor:					#666;		  			 //hr顏色
+$color-word:				#333;
+// 連結顏色
+$color-time:				#5d5d5d;
+$aColor:					$color-word;
+$aHover:					#126a80;
+
+// 表單focus顏色
+$form-focus:				#126a80;				//表單
+$color-mapbg:				#333;
+$color-mapText:				#fff;
+$color-menubg:              #454545;
+$fatBgColor: #5c5c5c; //fatFooter 底色
+$fatTextColor: #222; //fatFooter 連結顏色
+$fatTextColor2: #fff; //fatFooter 連結顏色2
+$fatTextbgColor:#126a80; //連結背景
+$color-searchBg:			#01131f;
+$color-menuHover:#126a80;
+$color-navBtn:#126a80;
+$footerBgColor: #3C3C3C;
+$footerTextColor:#eee;
+$footerLinkbg:#3E3E3E;
+$footerLinkColor:#fff;
+$footerLinkColorOv:#00fcd6;
+$counterColor:#00fcd6;
+$menuliovColor:#00fcd6;
+//-------------------------------------------------------------字型--------//
+
+// 字型設定
+$font-family:               'Lato,"PingFang TC","Helvetica Neue",Helvetica,微軟正黑體,新細明體,Arial,sans-serif';
+$font-size:					16px;
+
+//-------------------------------------------------------------格線系統-----//
+
+// 格線系統
+$grid-columns:              12 !default;			   //格線欄位數
+$grid-gutter-width:         30px !default;			   //左右padding
+$container-max:             1200px !default;		   //container最大寬
+
+//mediaquery
+$screen-lg:        			1400px !default;  	       //電腦
+$screen-md:        			992px  !default;      	   //平板
+$screen-sm:        			768px  !default;     	   //手機 
+$screen-xs:        			576px  !default;      	   //極小尺寸
+
+//-------------------------------------------------------------客製化------//
+
+// 圖片
+$rounded-angle:             16px;					   //圖片導角
+
+
+
+
+
+
+
+
+

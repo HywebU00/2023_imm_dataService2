@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HyUI kit</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="vendor/slick/css/slick.css"/>
+<link rel="stylesheet" href="vendor/slick/css/slick-theme.css"/>
+<link rel="stylesheet" href="css/hyui.css">
+</head>
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按 Enter 到主內容區</a>
+    <!-- mobile menu -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+
+                <h1>
+                    <a href="#"><img src="images/logo.png" alt="中華民國內政部移民署"/></a>
+                </h1>
+                <!-- navigation Start -->
+                <nav class="navigation">
+                    <!-- 一組ul預設靠右 -->
+                    <!-- 兩組ul已寫JQ靠左靠右 -->
+                    <ul>
+                        <li><a href="#">回首頁</a></li>
+                        <li><a href="#">網站導覽</a></li>
+                        <li><a href="#">回移民署</a></li>
+                    </ul>
+                </nav>               
+                <!-- Search Start -->
+                <section class="search">
+                   <noscript>
+                    您的瀏覽器不支援 JavaScript 或 JavaScript已停用
+                </noscript>
+                <form action="" class="form_inline">
+                    <div class="form_grp">
+                        <label for="mustSameAsId">全文檢索:</label>
+                        <input name="username" id="mustSameAsId" type="text" placeholder="請輸入關鍵字" accesskey="S">
+                    </div>
+                    <div class="btn_grp">
+                        <input name="" type="submit" value="" placeholder="查詢" />
+                    </div>
+                </form>
+            </section>  
+
+            <!-- noscript -->
+            <noscript>
+                您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+            </noscript>
+            <!-- menu Start -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">本隊介紹</a>
+                        <ul>
+                            <li><a href="#">般難道候者</a></li>
+                            <li><a href="#">性一聲心</a></li>
+                            <li><a href="#">話臺發天</a></li>
+                            <li><a href="#">見趣景風出</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">便民服務</a>
+                        <ul>
+                            <li><a href="#">坐息終路</a></li>
+                            <li><a href="#">選唱個可心</a></li>
+                            <li><a href="#">車就開而著</a></li>
+                            <li><a href="#">計以國升</a></li>
+                            <li><a href="#">過河人失是</a></li>
+                            <li><a href="#">千遠嗎親</a></li>
+                            <li><a href="#">國方銀主間望</a></li>
+                            <li><a href="#">背事規水</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">活動專區</a>
+                        <ul>
+                            <li><a href="#">中少維府</a></li>
+                            <li><a href="#">校始信響要們</a></li>
+                            <li><a href="#">衣花保只紅</a>
+                                <ul>
+                                    <li><a href="#">第三層選單測試</a>
+                                        <ul>
+                                            <li><a href="#">第四層選單測試</a></li>
+                                            <li><a href="#">第四層選單測試</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">104年</a></li>
+                                    <li><a href="#">103年</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">微從的出</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">訊息公告</a>
+                        <ul>
+                            <li><a href="#">小在少變開</a></li>
+                            <li><a href="#">神頭是到在</a></li>
+                            <li><a href="#">不從議育</a></li>
+                            <li><a href="#">家業異氣歡</a></li>
+                            <li><a href="#">看感建建錯</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">互動專區</a>
+                        <ul>
+                            <li><a href="#">經車散雖</a></li>
+                            <li><a href="#">日大畫評</a></li>
+                            <li><a href="#">不發題代</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">常見問題</a>
+                        <ul>
+                            <li><a href="#">經車散雖</a></li>
+                            <li><a href="#">日大畫評</a></li>
+                            <li><a href="#">不發題代</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <!-- header End -->
+
+        <!-- main Start -->
+        <div id="center" class="main">
+            <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+            <!-- wrap star -->
+            <section class="section wrap">
+                <div class="container">
+                    <!-- breadcrumb路徑 -->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">節點</a></li>
+                            <li>節點</li>
+                        </ul>
+                    </div>
+                    <!-- h2節點 -->
+                    <h2>最新消息</h2>
+                    <!-- function功能區塊 -->
+                    <div class="function">
+                        <ul>
+                            <li class="back"><a href="#">回上一頁</a></li>
+                            <li class="print"><a href="#">友善列印</a></li>
+                            <li class="forward"><a href="#">轉寄友人</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- LP Start -->
+                    <section class="lp">
+                        <!-- article star -->
+                        <article>
+                            <p><img src="images/pic01.jpg" alt="圖片說明">為鼓勵新住民子女利用假期回到(外)祖父母家進行家庭生活、語言學習與文化交流體驗，透過學習交流，培育多元文化人才的種子，以其多語及跨文化優勢接軌國際，拓展國家經貿發展，開拓新視野。不限國籍別，請符合資格之新住民家庭(子女需小學五年級以上)踴躍參加計畫甄選，採書面報名。收件截止日期延長至107年4月2日，請符合資格之學生、家長及教師（含社工）盡速送件！以郵戳為憑。為鼓勵新住民子女利用假期回到(外)祖父母家進行家庭生活、語言學習與文化交流體驗，透過學習交流，培育多元文化人才的種子，以其多語及跨文化優勢接軌國際，拓展國家經貿發展，開拓新視野。不限國籍別，請符合資格之新住民家庭(子女需小學五年級以上)踴躍參加計畫甄選，採書面報名。收件截止日期延長至107年4月2日，請符合資格之學生、家長及教師（含社工）盡速送件！以郵戳為憑。</p> 
+                        </article>
+                        <!-- article end -->
+                        <!-- category -->
+                        <div class="category">
+                            <ul>
+                                <li><a href="#">標籤1</a></li>
+                                <li><a href="#">標籤2</a></li>
+                                <li><a href="#">標籤3</a></li>
+                                <li><a href="#">標籤4</a></li>
+                                <li><a href="#">標籤5</a></li>
+                                <li><a href="#">標籤6</a></li>
+                                <li><a href="#">標籤7</a></li>
+                                <li><a href="#">標籤8</a></li>
+                                <li><a href="#">標籤9</a></li>
+                                <li><a href="#">標籤10</a></li>
+                            </ul>
+                        </div>
+                        <!-- 文字列表 -->
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="num">1</span>
+                                        <h3><a href="#">無婚姻關係外籍母親如何留臺照顧子女 內政部將再彙整意見研議妥適因應方案</a></h3>
+                                        <p>107年3月5日行政院性別平等會召開第17次委員會議時，出席委員提出臨時動議並舉例5名個案樣態，希望內政部可以修正入出國及移民法...<span class="detal"><a href="#">詳全文</a></p>
+                                            <time>2018-03-09</time>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="num">2</span>
+                                            <h3><a href="#">荷蘭新銳藝術家楊文智生根臺南 發揚當代藝術美學</a></h3>
+                                            <p>知名文學家葉石濤曾寫下「臺南是一個適合人們作夢、幹活、戀愛、結婚、悠然過活的地方」，曾獲荷蘭皇家藝術獎的新銳畫家VAN DER GRAAF PASCAL(楊文智，39歲)在1年前選擇為愛飛越重洋...<span class="detal"><a href="#">詳全文</a></span></p>
+                                            <time>2018-03-09</time>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="num">3</span>
+                                            <h3><a href="#">移民署呼籲遭受家暴新住民可撥113專線求助</a></h3>
+                                            <p>近日新聞報導新住民遭受家暴，導致人身安全受威脅，甚至傷亡事件，移民署呼籲新住民朋友，遇有家暴情形切勿隱忍，並速撥打113保護專線求助，讓政府部門得以及時介入協處...<span class="detal"><a href="#">詳全文</a></span></p>
+                                            <time>2018-03-09</time>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="num">4</span>
+                                            <h3><a href="#">公告本署委託辦理107年度移民專業訓練甄選結果</a></h3>
+                                            <p>公告事項：本署107年2月12日召開委託辦理107年度移民專業人員訓練甄選會議，經甄選結果，由中華民國移民商業同業公會取得議約資格...<span class="detal"><a href="#">詳全文</a></span></p>
+                                            <time>2018-03-09</time>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="num">5</span>
+                                            <h3><a href="#">「107年新住民子女海外培力計畫」暑假活動，報名截止日期延長至107年4月2日！</a></h3>
+                                            <p>為鼓勵新住民子女利用假期回到(外)祖父母家進行家庭生活、語言學習與文化交流體驗，透過學習交流，培育多元文化人才的種子，以其多語及跨文化優勢接軌國際，拓展國家經貿發展，開拓新視野...<span class="detal"><a href="#">詳全文</a></span></p>
+                                            <time>2018-03-09</time>
+                                        </a>
+                                    </li>        
+                                </ul>
+                            </div>
+                            <!-- Pagination -->
+                            <div class="pagination">
+                                <form action="" class="form_inline">
+                                    <div class="total">
+                                        共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示
+                                        <select name="" id="">
+                                            <option value="">10</option>
+                                            <option value="">20</option>
+                                            <option value="">30</option>
+                                            <option value="">40</option>
+                                        </select>筆
+                                    </div>
+                                </form>
+                                <ul class="page">
+                                    <li class="first">
+                                        <a href="#" title="第一頁" aria-label="Previous">第一頁 </a></li>
+                                        <li class="prev">
+                                            <a href="#" title="回上一頁" aria-label="Previous">回上一頁 </a></li>
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">6</a></li>
+                                            <li><a href="#">7</a></li>
+                                            <li><a href="#">8</a></li>
+                                            <li><a href="#">9</a></li>
+                                            <li><a href="#">10</a></li>
+                                            <li class="next">
+                                                <a href="#" title="下一頁" aria-label="Next">下一頁 </a>
+                                            </li>
+                                            <li class="last">
+                                                <a href="#" title="最後一頁" aria-label="Next">最後一頁 </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <!-- LP End -->
+                            </div>
+                        </section>
+                        <!-- wrap end -->
+                    </div>
+                    <!-- main end -->
+
+                    <!-- fatfooter Start -->
+                    <section class="fatfooter">
+                        <div class="container">
+                            <button type="button" name="收合" class="btn btn-fatfooter">收合</button>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">本隊介紹</a>
+                                        <ul>
+                                            <li><a href="#">國境事務大隊簡介</a></li>
+                                            <li><a href="#">主管簡介</a></li>
+                                            <li><a href="#">組織編制</a></li>
+                                            <li><a href="#">業務職掌</a></li>
+                                            <li><a href="#">最佳移民官</a></li>
+                                            <li><a href="#">證照辨識達人</a></li>
+                                            <li><a href="#">各服務地點聯絡資訊</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">便民服務</a>
+                                        <ul>
+                                            <li><a href="#">便民服務</a></li>
+                                            <li><a href="#">運輸業者專區</a></li>
+                                            <li><a href="#">旅客投訴處理流程</a></li>
+                                            <li><a href="#">認識護照</a></li>
+                                            <li><a href="#">國境線面談</a></li>
+                                            <li><a href="#">國境各類書表連結</a></li>
+                                            <li><a href="#">服務櫃檯受理項目</a></li>
+                                            <li><a href="#">各機場、港口航班資訊</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">活動專區</a>
+                                        <ul>
+                                            <li><a href="#">國境管理國際研討會</a></li>
+                                            <li><a href="#">機場小旅行學員護照</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">訊息公告</a>
+                                        <ul>
+                                            <li><a href="#">最新消息</a></li>
+                                            <li><a href="#">移民特考考情資訊</a></li>
+                                            <li><a href="#">聞聲救苦</a></li>
+                                            <li><a href="#">媒體報導</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">互動專區</a>
+                                        <ul>
+                                            <li><a href="#">旅客來信讚揚案例</a></li>
+                                            <li><a href="#">上榜同仁經驗分享</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">常見問題</a></li>                                            
+                                </ul>
+                            </nav>
+                        </div>
+                    </section>
+                    <!-- footer -->
+                    <footer>
+                        <!-- footer_link star -->
+                        <div class="footer_link">
+                            <div class="container">
+                                <ul>
+                                    <li><a href="#">保有及管理個人資料</a></li>
+                                    <li><a href="#">隱私權保護服務及宣告</a></li>
+                                    <li><a href="#">安全防護與回復機制</a></li>
+                                    <li><a href="#">資訊安全宣告</a></li>
+                                    <li><a href="#">政府網站資料開放宣告</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- footer_link end -->
+
+                        <div class="container">
+                            <a class="accesskey" href="#aF" id="aF" accesskey="F" title="頁尾區">:::</a>
+
+                            <div class="footer_info">
+
+                                <p class="Copyright">中華民國內政部移民署 版權所有 NATIONAL IMMIGRATION AGENCY</p>
+                                <p>
+                                    地址：33758桃園市大園區航站南路9號     電話：(03)398-5010<br>
+                                    外來人士在臺生活諮詢服務專線：國內 0800-024-111 國外 886-800-024-111
+                                </p>
+                                <span class="update">更新日期:<em>2018/01/01</em></span>
+                                <span class="counter">累計瀏覽人次:<em>46476653</em></span>
+                            </div>
+                            <div class="footer_icon">
+                                <a target="_blank" href="javascript:;" title="另開視窗">
+                                    <img src="images/basic/accessibility.jpg" alt="">
+                                </a>
+                                <a target="_blank" href="javascript:;" title="另開視窗">
+                                    <img src="images/basic/egov.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+
+                <a href="javascript:;" class="scrollToTop" title="回頁首">回頁首</a>
+
+                <script src="js/jquery.1.12.4.min.js"></script>
+                <script src="vendor/slick/slick.js"></script>
+                <script src="vendor/jquery.easing.min.js"></script>
+                <script src="js/hyui.js"></script>
+                <script src="js/customize_scripts2.js"></script>
+
+            </body>
+            </html>

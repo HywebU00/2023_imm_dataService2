@@ -1,0 +1,608 @@
+//mp自訂
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/*思源黑體*/
+.event{
+	margin:1em 0;
+	position:relative;
+	.rightBlock{
+		text-align:center;
+	}
+}
+
+
+.news {
+	text-align: left;
+	margin-left:28px;
+	@include screen("mobile") {
+		margin:1em auto;	
+	}
+	h2 {
+		font: 500 1.5em "Noto Sans TC";
+		margin: 2em 0 0.5em 10px;
+		border-left: solid 5px $color-green;
+		padding-left: 10px;
+		line-height: 1em;
+
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0 15px 0 15px;
+		font: 400 1.05em "Noto Sans TC";
+		li {
+			padding: 0.5em 0;
+			border-bottom: 1px solid #bababa;
+			position: relative;
+			a {
+				display: block;
+				padding-left: 11em;
+				position: relative;
+				line-height: 1.45em;
+				@include screen("mobile") {
+					padding-left: 0;
+				}
+			}
+			span.dept {
+				display: inline-block;
+				margin: 0 0.5em 0 1em;
+				color: $color-orange;
+				// float: left;
+				position:absolute;
+				left:5em;
+				width:4em;
+				height:1.5em;
+				overflow:hidden;
+				@include screen("mobile") {
+					display: block;
+					font-size:.75em;
+					position:static;
+				}
+			}
+			span.dept2 {
+				display: inline-block;
+				margin: 0 0.5em 0 1em;
+				color: $primaryColor;
+				// float: left;
+				position:absolute;
+				left:5em;
+				width:4em;
+				height:1.5em;
+				overflow:hidden;
+				@include screen("mobile") {
+					display: block;
+					font-size:.75em;
+					position:static;
+				}
+			}
+			span.dept3 {
+				display: inline-block;
+				margin: 0 0.5em 0 1em;
+				color: $color-green2;
+				// float: left;
+				position:absolute;
+				left:5em;
+				width:4em;
+				height:1.5em;
+				overflow:hidden;
+				@include screen("mobile") {
+					display: block;
+					font-size:.75em;
+					position:static;
+				}
+			}
+
+			span.title {
+				display: inline-block;
+				max-width: 96%;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				@include screen("mobile") {
+					display: block;
+					max-width: 98%;
+					white-space:normal;
+					text-overflow:initial;
+					@include clearfix;
+				}
+			}
+			time {
+				display: inline-block;
+				color: $color-time;
+				// float: left;
+				font-size: 0.93em;
+				position:absolute;
+				left:0;
+				@include screen('mobile') {
+					font-size:.75em;
+					position:static;
+					float:left;
+					padding-right:0.5em;
+				}
+			}
+		}
+	}
+}
+
+.more{
+	float:right;
+	margin:1em 1em 0 0;
+	font-size:0.83em;
+	a{
+		display:block;
+		background:$color-navBtn;
+		padding:2px 1.2em;
+		border-radius:5px;
+		color:#fff;
+		&:hover, &:focus{
+			background:$color-menuHover;	
+		}
+	}
+}
+
+.mpBanner {
+	text-align: left;
+	margin: 15px;
+	@include screen("mobile") {
+		margin: -5px -35px 30px;
+	}
+	.slick-dots
+	{
+		bottom: -40px;
+	}
+	.Responsive_slider {
+		margin: 0 15px;
+		.img-container {
+			width: 100%;
+			height: 300px ;
+            position: relative; // @include aspect-ratio(10, 3);
+            overflow: hidden;
+            @include screen('mobile') {
+            	height: 200px;
+            	width: 100%;
+            }
+            a {
+            	display: block;
+            	height: 100%;
+            	width: 100%;
+            	position: relative;
+            	padding:0;
+            }
+            img {
+            	width: 100%;
+            	height: 100%;
+            }
+            /*for IE */
+            .ie-object-cover {
+            	position: relative;
+            	background-size: cover;
+            	background-position: center center;
+            }
+            .ie-object-fill {
+            	position: relative;
+            	background-size: auto;
+            	background-position: center center;
+            }
+            .ie-object-contain {
+            	position: relative;
+            	background-size: contain;
+            	background-position: center center;
+            }
+            /* 圖檔變成透明 */
+            .ie-object-cover,
+            .ie-object-fill,
+            .ie-object-contain {
+            	background-repeat: no-repeat;
+            }
+            .ie-object-cover img,
+            .ie-object-fill img,
+            .ie-object-contain img {
+            	opacity: 0;
+            	width: 0px;
+            	height: 0px;
+            }
+            .fill {
+            	object-fit: fill;
+            }
+            .contain {
+            	object-fit: contain;
+            }
+            .cover {
+            	object-fit: cover;
+            }
+            .none {
+            	object-fit: none;
+            }
+
+            .scale-down {
+            	object-fit: scale-down;
+            }
+        }
+    }
+    .slick-slide{
+    	margin:5px;
+    }
+    .slick-slide a {
+    	// padding: 6px;
+    	// margin-bottom: 3px;
+    	display: block;
+    	img{
+    		// width:100%;
+    		// // height:300px;
+    		// @include screen("notebook") {
+    		// 	height:240px;
+    		// }
+    		// @include screen("tablet") {
+    		// 	height:200px;
+    		// }
+    		// @include screen("mobile") {
+    		// 	height:200px;
+    		// }
+    	}
+    }
+
+}
+
+
+.fb-box {
+	margin:1.2em auto;
+	iframe {
+		margin: 0 auto;
+		width:280px;
+		// width: 80%;
+		img {
+			width: 100%;
+			// height: 100%;
+		}
+		@include screen('notebook') {
+			margin-left:-25px;
+			width:240px;
+		}
+		@include screen('mobile') {
+			margin-left:0px;
+			width:280px;
+		}
+	}
+}
+
+// .service-list{
+// 	background:#28b1b2 url(../images/service-list-bg.png)repeat-x left bottom;
+// 	margin:1em 0;
+// 	.Responsive_slider{
+// 		margin:10px 35px 20px;
+// 		div{
+// 			margin:10px;
+
+// 			&:nth-child(1){
+// 				margin-left:5px;
+// 			}
+// 		}
+
+// 		@include screen('mobile') {
+// 			margin:0px 50px 10px 50px;	
+// 			div{
+// 				margin:5px 10px 10px 10px;
+// 			}
+// 		}
+// 	}
+
+// 	.slick-slide{
+// 		float:none;
+// 		display:inline-block;
+
+// 	}
+// }
+
+
+
+//write it in your sass setting
+.service-list{
+	background:#28b1b2 url(../images/service-list-bg.png)repeat-x left bottom;
+	margin:1em 0;
+	padding-bottom: 2em;
+
+	h2 {
+		font: 500 1.5em "Noto Sans TC";
+		margin:1em 0 0.5em 0;
+		line-height: 1em;
+		color:$color-default;
+	}
+
+	.Responsive_slider {
+		@include gutter(70px);
+		@include screen('mobile') {
+			@include gutter();
+		}
+
+		.slick-prev {
+			background: url(../vendor/slick/images/icon_prev.png) no-repeat center center;
+			background-size: 80%;
+			left: 0px;
+			&:hover{
+				background: url(../vendor/slick/images/icon_prev_hover.png) no-repeat center center;
+				background-size: 80%;
+				left: 0px;	
+			}
+		}
+		.slick-next {
+			background: url(../vendor/slick/images/icon_next.png) no-repeat center center;
+			background-size: 80%;
+			right: 0px;
+			&:hover{
+				background: url(../vendor/slick/images/icon_next_hover.png) no-repeat center center;
+				background-size: 80%;
+				right: 0px;	
+			}
+		}
+		.img-item {
+			width: 100%;
+			height: auto;
+			margin: 0px 15px;
+			a {
+				display: block;
+				text-align: center;
+				img {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+
+}
+
+.G-map{
+	margin:2em auto 1em;
+	h2 {
+		font: 500 1.5em "Noto Sans TC";
+		margin: 0 0 0.8em 10px;
+		border-left: solid 5px $color-green;
+		padding-left: 10px;
+		line-height: 1em;
+		text-align: left;
+		@include screen('tablet') {
+			margin: 1em 0 0.5em;
+		}
+	}
+	.rightBlock{
+		position: relative;
+		h2{
+			margin-left:5px;
+		}
+	}
+	.mapInfo{display: none;position: absolute;left: 0;top: 2.8em;height: 380px;width: 94.5%;margin-left:2%;
+		@include screen('tablet') {
+			top: 0em;
+			width: 100%;
+			margin-left:0;
+			position:relative;
+		}
+
+		@include screen('mobile') {
+			height: 280px;
+			
+		}	
+	}
+	.mapInfo[id="mapInfo-airport-01"]{display: block;}
+	.mapInfo:after{content: '';display: block;clear: both;}
+	.map {height: 100%;
+		// @include screen('mobile') {
+		// 	height: 300px;
+		// }
+	}
+	.map iframe{height: 100%;width: 100%;border: 0;}
+
+	.twbg{
+		background:#03385c;
+		margin-left:10px;
+		@include screen('tablet') {
+			margin-left:0px;
+		}
+		.tw-place{
+			position:relative;
+			width:330px;
+			height: 380px;
+			margin:0 auto;
+			background:url('../images/tw.png')no-repeat center center;
+		}
+		//機場
+		.airport{
+			margin:0;
+			li{
+				list-style:none;
+				text-align:left;
+				font-size:0.8em;
+				position:absolute;
+				a{
+					color:#00ffd8;
+					background:url('../images/icon-airport.png')no-repeat left center;
+					background-size: 18px 18px;
+					padding-left:20px;
+					&:hover,
+					&:focus{
+						color:#efff00;
+						background:url('../images/icon-airport-ov.png')no-repeat left center;
+						background-size: 18px 18px;						
+					}
+				}
+			}
+		}
+		//機場定位
+		#airport-01{
+			top:35px;
+			left:200px;
+		}
+		#airport-02{
+			top:45px;
+			left:120px;
+		}
+		#airport-03{
+			top:120px;
+			left:50px;
+		}
+		#airport-04{
+			top:195px;
+			left:90px;
+		}
+		#airport-05{
+			top:245px;
+			left:40px;
+		}
+		#airport-06{
+			top:260px;
+			left:120px;
+		}
+		#airport-07{
+			top:220px;
+			right:70px;
+		}
+		#airport-08{
+			top:190px;
+			right:70px;
+		}
+		#airport-09{
+			top:55px;
+			left:10px;
+		}
+		#airport-10{
+			top:155px;
+			left:10px;
+		}		
+		//港口
+		.port{
+			margin:0;
+			li{
+				list-style:none;
+				text-align:left;
+				font-size:0.83em;
+				position:absolute;
+				a{
+					color:#fff;
+					background:url('../images/icon-port.png')no-repeat left center;
+					background-size: 18px 18px;
+					padding-left:20px;					
+					&:hover,
+					&:focus{
+						color:#efff00;
+						background:url('../images/icon-port-ov.png')no-repeat left center;
+						background-size: 18px 18px;							
+					}
+				}
+			}
+		}
+
+		//港口定位
+		#port-01{
+			top:10px;
+			left:120px;
+		}
+		#port-02{
+			top:100px;
+			left:50px;
+		}
+		#port-03{
+			top:175px;
+			left:25px;
+		}
+		#port-04{
+			top:195px;
+			left:25px;
+		}
+		#port-05{
+			top:225px;
+			left:10px;
+		}
+		#port-06{
+			top:265px;
+			left:10px;
+		}
+		#port-07{
+			top:320px;
+			left:60px;
+		}
+		#port-08{
+			top:170px;
+			right:80px;
+		}
+		#port-09{
+			top:130px;
+			right:40px;
+			@include screen('xs_mobile') {
+				right:50px;	
+			}
+		}
+		#port-10{
+			top:88px;
+			right:40px;
+			@include screen('xs_mobile') {
+				right:50px;	
+			}
+		}
+		#port-11{
+			top:15px;
+			right:30px;
+			@include screen('xs_mobile') {
+				right:50px;	
+			}
+		}
+		#port-12{
+			top:15px;
+			left:10px;
+		}
+		#port-13{
+			top:35px;
+			left:10px;
+		}
+		#port-14{
+			top:75px;
+			left:10px;
+		}
+		#port-15{
+			top:140px;
+			left:10px;
+		}					
+	}
+
+	.info{
+		background:$color-mapbg;
+		color:$color-mapText;
+		text-align:left;
+		height: 100%;
+		overflow:auto;
+
+		@include screen("mobile") {
+			height: auto;
+		}
+		h3{
+			margin:1em 0 0 15px;
+			font-weight:300;
+			font-size: 1.25em;
+			color:#00fcd6;
+		}
+		p{
+			font-size:0.83em;
+			line-height:1.8em;
+			margin:5px 15px 15px 15px;
+		}
+	}
+
+}
+
+
+
+// .aaa{
+	// 	display:none;
+	// 	@media screen and (max-widht:768px) {
+		// 		display:none;
+		// 	}
+		// 	@include screen('mobile') {
+			// 		display:none;
+			// 	}
+			// }
+
+
+
+			// @media screen and (max-widht:768px) {
+				// 	.aaa{
+					// 	display:none;
+					// }
+					// }

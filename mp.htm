@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HyUI kit</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="vendor/slick/css/slick.css"/>
+<link rel="stylesheet" href="vendor/slick/css/slick-theme.css"/>
+<link rel="stylesheet" href="css/hyui.css">
+</head>
+<body>
+    <!-- 直接跳主內容區 --> 
+    <a class="goCenter" href="#center" tabindex="1">按 Enter 到主內容區</a> 
+    <!-- mobile menu -->
+    <div class="wrapper"> 
+      <!-- header Start -->
+      <header class="header">
+        <div class="container">
+            <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+            <h1> <a href="#"><img src="images/logo.png" alt="中華民國內政部移民署"/></a> </h1>
+            <!-- navigation Start -->
+            <nav class="navigation"> 
+              <!-- 一組ul預設靠右 --> 
+              <!-- 兩組ul已寫JQ靠左靠右 -->
+              <ul>
+                <li><a href="#">回首頁</a></li>
+                <li><a href="#">網站導覽</a></li>
+                <li><a href="#">回移民署</a></li>
+            </ul>
+        </nav>
+        <!-- Search Start -->
+        <section class="search">
+          <noscript>
+              您的瀏覽器不支援 JavaScript 或 JavaScript已停用
+          </noscript>
+          <form action="" class="form_inline">
+            <div class="form_grp">
+              <label for="mustSameAsId">全文檢索:</label>
+              <input name="username" id="mustSameAsId" type="text" placeholder="請輸入關鍵字" accesskey="S">
+          </div>
+          <div class="btn_grp">
+              <input name="" type="submit" value="" placeholder="查詢" />
+          </div>
+      </form>
+  </section>
+
+  <!-- noscript -->
+  <noscript>
+    您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+</noscript>
+<!-- menu Start -->
+<nav class="menu">
+  <ul>
+    <li><a href="#">本隊介紹</a>
+      <ul>
+        <li><a href="#">般難道候者</a></li>
+        <li><a href="#">性一聲心</a></li>
+        <li><a href="#">話臺發天</a></li>
+        <li><a href="#">見趣景風出</a></li>
+    </ul>
+</li>
+<li><a href="#">便民服務</a>
+  <ul>
+    <li><a href="#">坐息終路</a></li>
+    <li><a href="#">選唱個可心</a></li>
+    <li><a href="#">車就開而著</a></li>
+    <li><a href="#">計以國升</a></li>
+    <li><a href="#">過河人失是</a></li>
+    <li><a href="#">千遠嗎親</a></li>
+    <li><a href="#">國方銀主間望</a></li>
+    <li><a href="#">背事規水</a></li>
+</ul>
+</li>
+<li><a href="#">活動專區</a>
+  <ul>
+    <li><a href="#">中少維府</a></li>
+    <li><a href="#">校始信響要們</a></li>
+    <li><a href="#">衣花保只紅</a>
+      <ul>
+        <li><a href="#">第三層選單測試</a>
+          <ul>
+            <li><a href="#">第四層選單測試</a></li>
+            <li><a href="#">第四層選單測試</a></li>
+        </ul>
+    </li>
+    <li><a href="#">104年</a></li>
+    <li><a href="#">103年</a></li>
+</ul>
+</li>
+<li><a href="#">微從的出</a></li>
+</ul>
+</li>
+<li><a href="#">訊息公告</a>
+  <ul>
+    <li><a href="#">小在少變開</a></li>
+    <li><a href="#">神頭是到在</a></li>
+    <li><a href="#">不從議育</a></li>
+    <li><a href="#">家業異氣歡</a></li>
+    <li><a href="#">看感建建錯</a></li>
+</ul>
+</li>
+<li><a href="#">互動專區</a>
+  <ul>
+    <li><a href="#">經車散雖</a></li>
+    <li><a href="#">日大畫評</a></li>
+    <li><a href="#">不發題代</a></li>
+</ul>
+</li>
+<li><a href="#">常見問題</a>
+  <ul>
+    <li><a href="#">經車散雖</a></li>
+    <li><a href="#">日大畫評</a></li>
+    <li><a href="#">不發題代</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</header>
+<!-- header End --> 
+<!-- main Start -->
+<div id="center" class="main"> <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a> 
+    <!--  event star -->
+    <section class="section event">
+      <div class="container">
+        <div class="leftBlock"> 
+          <!--  service-list star -->
+          <div class="mpBanner">
+            <div class="Responsive_slider">
+              <div class="img-container"> <a href="#"><img src="images/mp_banner.jpg" alt="圖片說明" class="cover"></a> </div>
+              <div class="img-container"> <a href="#"><img src="https://assets.imgix.net/unsplash/coffee.JPG?w=1200&h=800&fit=crop&auto=format%2Cenhance&usm=20" alt="圖片說明" class="cover"></a> </div>
+              <div class="img-container"> <a href="#"><img src="images/mp_banner2.jpg" alt="圖片說明" class="cover"></a> </div>
+              <div class="img-container"> <a href="#"><img src="images/mp_banner3.jpg" alt="圖片說明" class="cover"></a> </div>
+          </div>
+      </div>
+      <!--  service-list end --> 
+      <!-- news star -->
+      <div class="news">
+        <h2>訊息公告</h2>
+        <ul>
+          <li> <a href="#">
+            <time>2018-03-09</time>
+            <span class="dept">移民特考考情資訊</span> <span class="title">108學年列必修╱新住民語恐缺師資 教部推直播共學</span> </a> </li>
+            <li> <a href="#">
+                <time>2018-03-09</time>
+                <span class="dept">最新消息</span> <span class="title">1新住民語列必選 國小首開58班</span> </a> </li>
+                <li> <a href="#">
+                    <time>2018-03-09</time>
+                    <span class="dept">最新消息</span> <span class="title">搭配新南向新住民教育預算明年編2.5億</span> </a> </li>
+                    <li> <a href="#">
+                        <time>2018-03-09</time>
+                        <span class="dept2">活動消息</span> <span class="title">「第4屆新住民及其子女築夢計畫」活動報名截止時間延長至106年12月8日（星期五），歡迎踴躍參加。「第4屆新住民及其子女築夢計畫」活動報名截止時間延長至106年12月8日（星期五），歡迎踴躍參加。</span> </a> </li>
+                        <li> <a href="#">
+                            <time>2018-03-09</time>
+                            <span class="dept3">課程資訊</span> <span class="title">新住民法令及福利宣導課程</span> </a> </li>
+                        </ul>
+                        <div class="more"> <a href="#">更多</a> </div>
+                    </div>
+                </div>
+                <!-- leftBlock end --> 
+                <!-- right-banner star -->
+                <div class="rightBlock"> 
+                  <!-- fb-box star -->
+                  <div class="fb-box">
+                    <iframe src="images/fb.jpg" width="260" height="520" style="border:none;overflow:hidden" scrolling="auto" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+                <!-- fb-box end --> 
+            </div>
+            <!-- right-banner end --> 
+        </div>
+    </section>
+    <!--  event end --> 
+    <!-- service-list star -->
+    <section class="section service-list">
+      <div class="container">
+        <h2>服務內容</h2>
+        <div class="Responsive_slider">
+            <div class="img-item"> <a href="#"><img src="images/service_01.png" alt="圖片說明" class="img-responsive"></a> </div>
+            <div class="img-item"> <a href="#"><img src="images/service_02.png" alt="圖片說明" class="img-responsive"></a> </div>
+            <div class="img-item"> <a href="#"><img src="images/service_03.png" alt="圖片說明" class="img-responsive"></a> </div>
+            <div class="img-item"> <a href="#"><img src="images/service_01.png" alt="圖片說明" class="img-responsive"></a> </div>
+            <div class="img-item"> <a href="#"><img src="images/service_02.png" alt="圖片說明" class="img-responsive"></a> </div>
+            <div class="img-item"> <a href="#"><img src="images/service_03.png" alt="圖片說明" class="img-responsive"></a> </div>
+        </div>
+    </div>
+</section>
+<!-- service-list end -->
+
+<!-- 各服務地點 star -->
+<section class="section G-map">
+  <div class="container">
+    <div class="leftBlock">
+      <h2>各服務地點</h2>
+      <div class="twbg">
+        <div class="tw-place">
+          <ul class="airport">
+            <li id="airport-01"><a href="#">松山機場</a></li>
+            <li id="airport-02"><a href="#">桃園機場</a></li>
+            <li id="airport-03"><a href="#">清泉崗機場</a></li>
+            <li id="airport-04"><a href="#">嘉義機場</a></li>
+            <li id="airport-05"><a href="#">台南機場</a></li>
+            <li id="airport-06"><a href="#">高雄國際機場</a></li>
+            <li id="airport-07"><a href="#">台東機場</a></li>
+            <li id="airport-08"><a href="#">花蓮機場</a></li>
+            <li id="airport-09"><a href="#">金門機場</a></li>
+            <li id="airport-10"><a href="#">馬公機場</a></li>
+        </ul>
+        <ul class="port">
+            <li id="port-01"><a href="#">臺北港</a></li>
+            <li id="port-02"><a href="#">臺中港</a></li>
+            <li id="port-03"><a href="#">麥寮港</a></li>
+            <li id="port-04"><a href="#">布袋港</a></li>
+            <li id="port-05"><a href="#">安平港</a></li>
+            <li id="port-06"><a href="#">高雄港</a></li>
+            <li id="port-07"><a href="#">屏東 東港</a></li>
+            <li id="port-08"><a href="#">花蓮港</a></li>
+            <li id="port-09"><a href="#">和平工業港</a></li>
+            <li id="port-10"><a href="#">蘇澳港</a></li>
+            <li id="port-11"><a href="#">基隆港</a></li>
+            <li id="port-12"><a href="#">馬祖 白沙港</a></li>
+            <li id="port-13"><a href="#">馬祖 福澳港</a></li>
+            <li id="port-14"><a href="#">金門港</a></li>
+            <li id="port-15"><a href="#">馬公港</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!-- rightBlock star -->
+<div class="rightBlock">
+  <h2>交通資訊</h2>
+  <!-- map-01 star --> 
+  <!-- <div id="mapInfo-01"> -->
+      <div id="mapInfo-airport-01" class="mapInfo"> 
+        <!-- <h2>交通資訊</h2> -->
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14456.049936529947!2d121.552699!3d25.067566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x93180ddcb6758a3a!2z6Ie65YyX5p2-5bGx5qmf5aC0!5e0!3m2!1szh-TW!2stw!4v1522321056829" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="info">
+          <h3>松山機場</h3>
+          <p> 地址：10548 台北市松山區敦化北路340-9號<br>
+            如何到<br>
+            大眾運輸<br>
+            捷運：桃園機場第二航廈站<br>
+            公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+            桃園國際機場第二航廈<br>
+            電話：(03)398-5010<br>
+            外來人士在臺生活諮詢服務專線：<br>
+        國內 0800-024-111 國外 886-800-024-111 </p>
+    </div>
+</div>
+<!-- map-01 end --> 
+<!-- map-02 star -->
+<div id="mapInfo-airport-02" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6604132857474!2d121.23338686546394!3d25.079496483951097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34429fc062d215d5%3A0x70a3b690a9b5b109!2z6Ie654Gj5qGD5ZyS5ZyL6Zqb5qmf5aC0!5e0!3m2!1szh-TW!2stw!4v1522321392316" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>桃園機場</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-02 end --> 
+<!-- map-03 star -->
+<div id="mapInfo-airport-03" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3637.5995614306435!2d120.5982011154509!3d24.255780484342715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346911535f840371%3A0x586410335e8a5024!2z6Ie65Lit5ZyL6Zqb5qmf5aC0!5e0!3m2!1szh-TW!2stw!4v1522322351636" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>清泉崗機場</h3>
+      <p> 地址：433台中市沙鹿區中航路ㄧ段168號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-03 end --> 
+<!-- map-04 star -->
+<div id="mapInfo-airport-04" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.162637424428!2d120.40169891497592!3d23.45459728473601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e96d701accdd3%3A0xbc2c2b46df30eccf!2z5ZiJ576p6Iiq56m656uZ!5e0!3m2!1szh-TW!2stw!4v1522392541904" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>嘉義機場</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-04 end --> 
+<!-- map-05 star -->
+<div id="mapInfo-airport-05" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.068278004903!2d120.21410451537967!3d22.947712424879313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e744f71792777%3A0xb69e3b70449ff8f!2z6Ie65Y2X5qmf5aC0!5e0!3m2!1szh-TW!2stw!4v1522392628004" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>台南機場</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-05 end --> 
+<!-- map-06 star -->
+<div id="mapInfo-airport-06" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.1196197934464!2d120.3426181154253!3d22.574628985181736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e1cce3ff6bb99%3A0x1ceaaec46945d129!2z6auY6ZuE5ZyL6Zqb6Iiq56m656uZ!5e0!3m2!1szh-TW!2stw!4v1522322004678" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>高雄國際機場</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-06 end --> 
+<!-- map-07 star -->
+<div id="mapInfo-airport-07" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.2395771556694!2d121.10504191537757!3d22.756488631929663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fb9a166f6ab49%3A0x1429df459a0f267f!2z5Y-w5p2x6Iiq56m656uZ!5e0!3m2!1szh-TW!2stw!4v1522392694726"  allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>台東機場</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-07 end --> 
+<!-- map-08 star -->
+<div id="mapInfo-airport-08" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.1715038516804!2d121.61386381539239!3d24.02501658414599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34689e1a5e886355%3A0x8e9fb3436a01bc18!2z6Iqx6JOu6Iiq56m656uZ!5e0!3m2!1szh-TW!2stw!4v1522392762124"  allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>花蓮機場</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-08 end --> 
+<!-- map-09 star -->
+<div id="mapInfo-airport-09" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.62347298336!2d118.35766531539726!3d24.429145168423595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3414a3babde97bf3%3A0xe865cdbc08733924!2z6YeR6ZaA6Iiq56m656uZ!5e0!3m2!1szh-TW!2stw!4v1522392816740"  allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>金門機場</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-09 end --> 
+<!-- map-10 star -->
+<div id="mapInfo-airport-10" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.120676462383!2d119.62599531544016!3d23.56410898468159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346c451f2ca4d42b%3A0xfcf7eab91c96fb01!2z5r6O5rmW5qmf5aC0!5e0!3m2!1szh-TW!2stw!4v1522322503877" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>馬公機場</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-10 end --> 
+
+<!-- 港口 map-11 star -->
+<div id="mapInfo-port-01" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28892.30302885819!2d121.3609512628046!3d25.15130982071032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a45e3bf0f521%3A0x97688d97441a7ee1!2z5Y-w5YyX5riv!5e0!3m2!1szh-TW!2stw!4v1522322897472" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>臺北港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-11 end --> 
+<!-- 港口 map-12 star -->
+<div id="mapInfo-port-02" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14546.695695718701!2d120.50188173699024!3d24.288117257728505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34696b58ac6f745b%3A0x9e3d9d6f1759f572!2z5Y-w5Lit5riv!5e0!3m2!1szh-TW!2stw!4v1522392879803"  allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>臺中港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-12 end --> 
+<!-- 港口 map-13 star -->
+<div id="mapInfo-port-03" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29207.38103565421!2d120.15440935794938!3d23.785769332997475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ea83cd0216dfb%3A0xf7f85515ee86de6a!2z6bql5a-u5bel5qWt5Y2A5bCI55So5riv!5e0!3m2!1szh-TW!2stw!4v1522392925419" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>麥寮港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-13 end --> 
+<!-- 港口 map-14 star -->
+<div id="mapInfo-port-04" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7324.470226559618!2d120.12784797665007!3d23.37971028705913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346c29b4fc5882c3%3A0xbfd78691f990e613!2z5biD6KKL5riv!5e0!3m2!1szh-TW!2stw!4v1522392998731" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>布袋港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-14 end --> 
+<!-- 港口 map-15 star -->
+<div id="mapInfo-port-05" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14691.44723814264!2d120.1444014867438!3d22.992108562615215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346dd8aba64cdca7%3A0xb8b659118a50d5ef!2z5a6J5bmz5riv!5e0!3m2!1szh-TW!2stw!4v1522393038283" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>安平港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-15 end --> 
+<!-- 港口 map-16 star -->
+<div id="mapInfo-port-06" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29467.695644825562!2d120.27125815706226!3d22.59921832121945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e039851b75ed9%3A0xb21e3d6de1610320!2z6auY6ZuE5riv!5e0!3m2!1szh-TW!2stw!4v1522393075554" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>高雄港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-16 end --> 
+<!-- 港口 map-17 star -->
+<div id="mapInfo-port-07" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29496.286002733643!2d120.4519463569657!3d22.465290814077598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471e1ba8f06ecdb%3A0xc6ea2c0aa44ebb43!2zOTI45bGP5p2x57ij5p2x5riv6Y6u!5e0!3m2!1szh-TW!2stw!4v1522393111763" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>屏東 東港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-17 end --> 
+<!-- 港口 map-18 star -->
+<div id="mapInfo-port-08" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29161.790643627355!2d121.61507810810619!3d23.987871865356716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3466207ec10f2ae3%3A0xa1daa88579a956bd!2z6Iqx6JOu5riv!5e0!3m2!1szh-TW!2stw!4v1522393156765" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>花蓮港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-18 end --> 
+<!-- 港口 map-19 star -->
+<div id="mapInfo-port-09" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7272.701223302661!2d121.75648532669447!3d24.29940251564697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467d300e7eb4733%3A0x9e62e160c946632e!2z5ZKM5bmz5bel5qWt5Y2A5bCI55So5riv!5e0!3m2!1szh-TW!2stw!4v1522393187693" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>和平工業港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-19 end --> 
+<!-- 港口 map-20 star -->
+<div id="mapInfo-port-10" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14511.374907598753!2d121.86031393705099!3d24.59458885788574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e9b86a948ec5%3A0x16bc932a38930f73!2z6JiH5r6z5riv!5e0!3m2!1szh-TW!2stw!4v1522393222612" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>蘇澳港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-20 end --> 
+<!-- 港口 map-21 star -->
+<div id="mapInfo-port-11" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14447.620310603643!2d121.74213588716118!3d25.13889981805848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d4e4456aeee69%3A0xe0644dd52b7522f3!2z5Z-66ZqG5YWn5riv!5e0!3m2!1szh-TW!2stw!4v1522393253924" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>基隆港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-21 end --> 
+<!-- 港口 map-22 star -->
+<div id="mapInfo-port-12" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.7343455008395!2d119.9666194154202!3d26.205318696490796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34417001f175be11%3A0x66286dae1d6f0474!2z5YyX56u_55m95rKZ5riv!5e0!3m2!1szh-TW!2stw!4v1522393289539"  allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>馬祖 白沙港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-22 end --> 
+<!-- 港口 map-23 star -->
+<div id="mapInfo-port-13" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3581.1256102167063!2d119.94115761541958!3d26.160038348381757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6aas56WWIOemj-a-s-a4rw!5e0!3m2!1szh-TW!2stw!4v1522393333736" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>馬祖 福澳港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-23 end --> 
+<!-- 港口 map-24 star -->
+<div id="mapInfo-port-14" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232635.34232094488!2d118.18848026143571!3d24.34902762939941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346b9d8a9b994523%3A0x1c228d2c7ebddbcf!2z6YeR6ZaA57ij!5e0!3m2!1szh-TW!2stw!4v1522393365564" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>金門港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-25 end --> 
+<!-- 港口 map-25 star -->
+<div id="mapInfo-port-15" class="mapInfo"> 
+    <!-- <h2>交通資訊</h2> -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7314.527712789755!2d119.56293727665829!3d23.55896522333394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346c5a92f9f9d78b%3A0x3ed1cd772467ea35!2z6aas5YWs5riv!5e0!3m2!1szh-TW!2stw!4v1522393395051" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+      <h3>馬公港</h3>
+      <p> 地址：33758桃園市大園區航站南路9號<br>
+        如何到<br>
+        大眾運輸<br>
+        捷運：桃園機場第二航廈站<br>
+        公車(bus)：705 706 706A 706B 986 5059 5089,<br>
+        桃園國際機場第二航廈<br>
+        電話：(03)398-5010<br>
+        外來人士在臺生活諮詢服務專線：<br>
+    國內 0800-024-111 國外 886-800-024-111 </p>
+</div>
+</div>
+<!-- map-25 end --> 
+</div>
+<!-- rightBlock star --> 
+
+</div>
+</section>
+</div>
+<!-- fatfooter Start -->
+<section class="fatfooter">
+    <div class="container">
+      <button type="button" name="收合" class="btn btn-fatfooter">收合</button>
+      <nav>
+        <ul>
+          <li><a href="#">本隊介紹</a>
+            <ul>
+              <li><a href="#">國境事務大隊簡介</a></li>
+              <li><a href="#">主管簡介</a></li>
+              <li><a href="#">組織編制</a></li>
+              <li><a href="#">業務職掌</a></li>
+              <li><a href="#">最佳移民官</a></li>
+              <li><a href="#">證照辨識達人</a></li>
+              <li><a href="#">各服務地點聯絡資訊</a></li>
+          </ul>
+      </li>
+      <li><a href="#">便民服務</a>
+        <ul>
+          <li><a href="#">便民服務</a></li>
+          <li><a href="#">運輸業者專區</a></li>
+          <li><a href="#">旅客投訴處理流程</a></li>
+          <li><a href="#">認識護照</a></li>
+          <li><a href="#">國境線面談</a></li>
+          <li><a href="#">國境各類書表連結</a></li>
+          <li><a href="#">服務櫃檯受理項目</a></li>
+          <li><a href="#">各機場、港口航班資訊</a></li>
+      </ul>
+  </li>
+  <li><a href="#">活動專區</a>
+    <ul>
+      <li><a href="#">國境管理國際研討會</a></li>
+      <li><a href="#">機場小旅行學員護照</a></li>
+  </ul>
+</li>
+<li><a href="#">訊息公告</a>
+    <ul>
+      <li><a href="#">最新消息</a></li>
+      <li><a href="#">移民特考考情資訊</a></li>
+      <li><a href="#">聞聲救苦</a></li>
+      <li><a href="#">媒體報導</a></li>
+  </ul>
+</li>
+<li><a href="#">互動專區</a>
+    <ul>
+      <li><a href="#">旅客來信讚揚案例</a></li>
+      <li><a href="#">上榜同仁經驗分享</a></li>
+  </ul>
+</li>
+<li><a href="#">常見問題</a></li>
+</ul>
+</nav>
+</div>
+</section>
+<!-- footer -->
+<footer> 
+    <!-- footer_link star -->
+    <div class="footer_link">
+      <div class="container">
+        <ul>
+          <li><a href="#">保有及管理個人資料</a></li>
+          <li><a href="#">隱私權保護服務及宣告</a></li>
+          <li><a href="#">安全防護與回復機制</a></li>
+          <li><a href="#">資訊安全宣告</a></li>
+          <li><a href="#">政府網站資料開放宣告</a></li>
+      </ul>
+  </div>
+</div>
+<!-- footer_link end -->
+
+<div class="container"> <a class="accesskey" href="#aF" id="aF" accesskey="F" title="頁尾區">:::</a>
+  <div class="footer_info">
+    <p class="Copyright">中華民國內政部移民署 版權所有 NATIONAL IMMIGRATION AGENCY</p>
+    <p> 地址：33758桃園市大園區航站南路9號     電話：(03)398-5010<br>
+    外來人士在臺生活諮詢服務專線：國內 0800-024-111 國外 886-800-024-111 </p>
+    <span class="update">更新日期:<em>2018/01/01</em></span> <span class="counter">累計瀏覽人次:<em>46476653</em></span> </div>
+    <div class="footer_icon"> <a target="_blank" href="javascript:;" title="另開視窗"> <img src="images/basic/accessibility.jpg" alt=""> </a> <a target="_blank" href="javascript:;" title="另開視窗"> <img src="images/basic/egov.png" alt=""> </a> </div>
+</div>
+</footer>
+</div>
+<a href="javascript:;" class="scrollToTop" title="回頁首">回頁首</a> 
+<script src="js/jquery.1.12.4.min.js"></script> 
+<script src="vendor/slick/slick.js"></script> 
+<script src="vendor/jquery.easing.min.js"></script> 
+<script src="vendor/map/map.js"></script> 
+<script src="js/hyui.js"></script> 
+<script src="js/customize_scripts2.js"></script>
+</body>
+</html>
