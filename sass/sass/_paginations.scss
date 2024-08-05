@@ -1,84 +1,83 @@
 /*pagination*/
 
 .pagination {
-    margin: 10px auto 5px;
-    padding: 0px;
-    display: block;
-    text-align: center;
-    clear: both;
-    font-size: .938em;
-    @include clearfix(); // outline: 1px solid red;
-    span{
-        color:$color-orange;
-        margin:0px .5em;
-    }
-    .btn, input[type="button"]{
-        padding: .25em 1em!important;
-        margin:0 2px !important;
-        min-width: 2em;
-        
-    }
-    .page {
-        margin: 10px 0;
-        padding: 0;
+  margin: 10px auto 5px;
+  padding: 0px;
+  display: block;
+  text-align: center;
+  clear: both;
+  font-size: 0.938em;
+  @include clearfix(); // outline: 1px solid red;
+  span {
+    color: $color-orange;
+    margin: 0px 0.5em;
+  }
+  .btn,
+  input[type='button'] {
+    padding: 0.25em 1em !important;
+    margin: 0 2px !important;
+    min-width: 2em;
+  }
+  .page {
+    margin: 10px 0;
+    padding: 0;
 
-        li {
-            display: inline-block;
-            min-width: 40px;
-            height: 40px;
-            margin: 5px 2px;
-            list-style: none;
-            @include box-sizing(border-box);
-            a {
-                border-radius: 5px;
-                padding: 6px 10px;
-                font-weight: 400;
-                display: block;
-                white-space: nowrap;
-                font-size: 15px;
-                color: $color-word;
-                background-color: rgb(247, 247, 247); // Old browsers
-                @include filter-gradient(#f7f7f7, #eaeaea, vertical); // IE6-9
-                @include background-image(linear-gradient(top, rgba(247, 247, 247, 1) 0%, rgba(234, 234, 234, 1) 100%));
-                border: #ccc solid 1px;
-                &:hover,
-                &:focus {
-                    background: $color-orange;
-                    color: #fff!important;
-                    border: $color-orange solid 1px;
-                }
-            }
-            &.active {
-                a {
-                    color: #fff!important;
-                    background: $color-orange;
-                    border: $color-orange solid 1px;
-                }
-            }
-            &.first,
-            &.prev,
-            &.next,
-            &.last {
-                a {
-                    color: $color-word;
-                    background: transparent;
-                    border: transparent;
-                    &:hover,
-                    &:focus {
-                        color: darken($color-word, 10) !important;
-                    }
-                }
-            }
+    li {
+      display: inline-block;
+      min-width: 40px;
+      height: 40px;
+      margin: 5px 2px;
+      list-style: none;
+      @include box-sizing(border-box);
+      a {
+        border-radius: 5px;
+        padding: 6px 10px;
+        font-weight: 400;
+        display: block;
+        white-space: nowrap;
+        font-size: 15px;
+        color: $color-word;
+        background-color: rgb(247, 247, 247); // Old browsers
+        background-image: linear-gradient(top, rgba(247, 247, 247, 1) 0%, rgba(234, 234, 234, 1) 100%);
+        border: #ccc solid 1px;
+        &:hover,
+        &:focus {
+          background: $color-orange;
+          color: #fff !important;
+          border: $color-orange solid 1px;
         }
+      }
+      &.active {
+        a {
+          color: #fff !important;
+          background: $color-orange;
+          border: $color-orange solid 1px;
+        }
+      }
+      &.first,
+      &.prev,
+      &.next,
+      &.last {
+        a {
+          color: $color-word;
+          background: transparent;
+          border: transparent;
+          &:hover,
+          &:focus {
+            color: darken($color-word, 10) !important;
+          }
+        }
+      }
     }
+  }
 }
 
 .pagination .total {
-    padding: 5px;
+  padding: 5px;
 }
 @media (max-width: 767px) {
-    .pagination .total select.form-control {
-        margin: 0px 0px;
-        text-align: center;
-    }
+  .pagination .total select.form-control {
+    margin: 0px 0px;
+    text-align: center;
+  }
 }
